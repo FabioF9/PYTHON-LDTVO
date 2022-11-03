@@ -1,7 +1,7 @@
 from msvcrt import LK_LOCK
 import os
 root_dir ="C:\\test\\"
-doc_name="tesT.csv"
+doc_name="esT.csv"
 def recherche(root_dir,doc_name,pathfile):
     l_ok = False
     for folder, subfolders, files in os.walk(root_dir):

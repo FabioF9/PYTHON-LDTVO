@@ -17,8 +17,8 @@ for line in lines:
     doc_link=path+liste[2] 
     fileDst = "I:\\Bal\\FabioFurnari\\www\\doc\\equipment_doc\\photo\\"
     fileDst =  fileDst + id + '_' + type + '_' + doc_name
-    print (i, doc_link)
-
+    print (i, doc_link) 
+    
     if os.path.exists(doc_link):
         try:
             shutil.copy(doc_link,fileDst)
