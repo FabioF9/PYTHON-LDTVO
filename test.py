@@ -1,12 +1,14 @@
-import re
-import os
-path1="I:\\Doc-Technique\\"
-path2="L:\\TAMPON\\"
-path3="L:\\Projets\\"
-
-str = "Hey, Copines is a good song; I like that song"
-
-# print(re.split('; |, |\*|\n', str))
-os.chdir(path3)
-for i in range (len(os.listdir())):
-    print(re.split('; |, |\\*|\n',os.listdir()[3]))
+# chaine="bonjour test"
+# if "bonjour" in chaine:
+#     print ('True')
+# fullstring = "StackAbuse"
+# substring = "tack"
+fullstring="\\serveur\\Donnees-LDTVO\\AccessROVJET\\2-Part_drawing\\0427_A11_DE001 (P00-215-52).pdf;0427_A11_DE001 (P00-215-52).pdf"
+substring="2-Part_drawing\\"
+try:
+    fullstring.index(substring)
+except ValueError:
+    print("Not found!")
+else:
+    print(fullstring.index(substring))
+    print(fullstring[fullstring.index(substring):])
